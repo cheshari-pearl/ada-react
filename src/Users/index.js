@@ -40,8 +40,7 @@ const Users = () => {
             fullName={`${user.firstName} ${user.lastName}`}
           />
         ))
-      ) : (
-        <h2>No users found</h2>
+      ) : (!loading && <h2>No users found</h2>
       )}
     </div>
   );
