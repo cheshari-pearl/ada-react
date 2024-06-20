@@ -4,9 +4,7 @@ import Users from "./Users";
 
 export const Introduction = () =>{
   return(
-
    <h1> We are AdaLab</h1>
-
   )
 }
 
@@ -16,7 +14,6 @@ const Pearl = () => {
     <div>
    
       <Login/>
-   
       <Users/>
     </div>
 

@@ -34,6 +34,9 @@ const Users = () => {
           <UserCard
             key={user.id}
             image={user.image}
+            age={user.age}
+            gender={user.gender}
+            city={user.city}
             fullName={`${user.firstName} ${user.lastName}`}
           />
         ))
