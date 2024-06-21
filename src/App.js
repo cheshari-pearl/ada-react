@@ -1,5 +1,6 @@
 import Login from "./login";
 import Users from "./Users";
+import { Routes,Route, Link } from "react-router-dom";
 
 
 export const Introduction = () =>{
@@ -9,15 +10,21 @@ export const Introduction = () =>{
 }
 
 
-const Pearl = () => {
+const App =()=>{
   return (
     <div>
-   
-      <Login/>
-      <Users/>
+      
+      
+      <nav>
+        <Link to={"/login"}>Login</Link>
+      </nav>
+      <Routes>
+        <Route path = '/login' element={<Login/>}></Route>
+        <Route path = '/users' element={<Users/>}></Route>
+      </Routes>
+      {/* <Login/>
+      <Users/> */}
     </div>
-
-
-  );
-};
-export default Pearl;
+  )
+}
+export default App;
